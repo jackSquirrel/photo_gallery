@@ -1,0 +1,8 @@
+.edit__button {
+    width: 38px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 15px;
+    align-self: flex-start;
+    margin-left: calc(150px + 37px);
+}
