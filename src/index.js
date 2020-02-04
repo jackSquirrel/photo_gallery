@@ -1,3 +1,5 @@
+import "./index.css";
+
 // ПЕРЕМЕННЫЕ 
 const formButton = document.querySelector('.user-info__button');
 const editButton = document.querySelector('.edit__button');
