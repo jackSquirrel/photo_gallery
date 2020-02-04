@@ -132,7 +132,6 @@ cardsList.addDefaultCards();
 formButton.addEventListener('click', newCardPopup.open);
 editButton.addEventListener('click', editPopup.open);
 avatar.addEventListener('click', newAvatar.open);
-
 /**
  * Шикарная работа. Видно что вы потрудились основательно.
  *
