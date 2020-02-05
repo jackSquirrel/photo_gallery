@@ -1,4 +1,4 @@
-class Popup {
+export default class Popup {
     constructor(props) {
         this._content = props.content;
         this.popupElement = null;

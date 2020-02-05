@@ -1,4 +1,4 @@
-class CardList {
+export default class CardList {
   constructor(props) {
     this._container = props.container;
     this._initialCards = props.initialCards;

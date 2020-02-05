@@ -40,3 +40,5 @@ const changeAvatar = `<div class="popup__content">
     <button type class="button popup__button save__button">Сохранить</button>
 </form>
 </div>`
+
+export {popupAddCard, popupEditProfile, popupOpenImage, changeAvatar};

@@ -1,4 +1,4 @@
-class RefreshAvatar extends Popup {
+export default class RefreshAvatar extends Popup {
     constructor(props){
         super(props);
         this._validation = props.validation;

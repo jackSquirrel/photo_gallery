@@ -1,4 +1,13 @@
 //import "./index.css";
+import Api from "./js/Api";
+import Card from "./js/Card";
+import CardList from "./js/CardList";
+import Popup from "./js/Popup";
+import {popupAddCard, popupEditProfile, popupOpenImage, changeAvatar} from "./js/popupContent";
+import PopupEditProfile from "./js/PopupEditProfile";
+import PopupNewCard from "./js/PopupNewCard";
+import RefreshAvatar from "./js/RefreshAvatar";
+import Validation from "./js/Validation";
 
 // ПЕРЕМЕННЫЕ 
 const formButton = document.querySelector('.user-info__button');

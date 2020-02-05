@@ -1,4 +1,4 @@
-class PopupNewCard extends Popup {
+export default class PopupNewCard extends Popup {
     constructor(props){
         super(props);
         this._validation = props.validation;

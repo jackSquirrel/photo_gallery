@@ -1,4 +1,4 @@
-class Validation {
+export default class Validation {
   constructor(messages) {
     this.messages = messages;
   }
@@ -39,28 +39,7 @@ class Validation {
   // Вывод текста ошибки при неправильных действиях пользователя
   _elementValidity(form, inputElement) {
     const error = form.querySelector(`#${inputElement.name}`);
-    /* Можно лучше: удалите else а внутри условия добавьте return
-     например было: 
-     if(условие){  
-       // ваш код 
-     } else if(условие2){ 
-       // ваш код 
-     } 
-     стало : 
-     if(условие){  
-         // ваш код 
-      return; 
-    } 
-   
-     if(условие2){ 
-      // ваш код 
-      return; 
-    } 
-   
-  */
 
-    // можно лучше: Для валидации используйте кастомный метод validation
-    // https: //developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation#Constraint_API%27s_element.setCustomValidity() 
     if (inputElement.validity.valueMissing) {
       error.classList.add('popup__is-not-valid');
       error.textContent = this.messages.requiredField;
