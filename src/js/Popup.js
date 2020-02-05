@@ -1,3 +1,5 @@
+import {popup} from "../index";
+
 export default class Popup {
     constructor(props) {
         this._content = props.content;

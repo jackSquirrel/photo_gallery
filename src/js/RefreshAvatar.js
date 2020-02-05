@@ -1,3 +1,6 @@
+import Popup from "./Popup";
+import {popup} from "../index";
+
 export default class RefreshAvatar extends Popup {
     constructor(props){
         super(props);

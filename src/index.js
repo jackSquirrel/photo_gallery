@@ -12,7 +12,7 @@ import Validation from "./js/Validation";
 // ПЕРЕМЕННЫЕ 
 const formButton = document.querySelector('.user-info__button');
 const editButton = document.querySelector('.edit__button');
-const popup = document.querySelector('.popup');
+export const popup = document.querySelector('.popup');
 const avatar = document.querySelector('.user-info__photo');
 let userId = '';
 
@@ -82,6 +82,7 @@ editPopup.render();
 // Попап для увеличенного изображения
 const imagePopup = new Popup({
   content: popupOpenImage,
+  popup: popup
 });
 imagePopup.render();
 

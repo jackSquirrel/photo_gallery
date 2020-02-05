@@ -1,4 +1,7 @@
-export  default class PopupEditProfile extends Popup {
+import Popup from "./Popup";
+import {popup} from "../index";
+
+export default class PopupEditProfile extends Popup {
     constructor(props){
         super(props);
         this.validation = props.validation;
