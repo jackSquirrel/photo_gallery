@@ -1,4 +1,4 @@
-import "./index.css";
+//import "./index.css";
 
 // ПЕРЕМЕННЫЕ 
 const formButton = document.querySelector('.user-info__button');
