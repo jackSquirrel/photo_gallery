@@ -24,7 +24,7 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.css$/i,
+                test: /\.css$/,
                 use: [
                     (isDev ? 'style-loader' : MiniCssExtractPlugin.loader), 
                     'css-loader', 

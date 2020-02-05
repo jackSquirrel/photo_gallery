@@ -1,4 +1,4 @@
-//import "./index.css";
+import "./index.css";
 import Api from "./js/Api";
 import Card from "./js/Card";
 import CardList from "./js/CardList";
@@ -103,8 +103,6 @@ function renderInfo() {
 
 // Функция, возвращающая экземпляр класса Card
 function newCard(name, link, likes, cardId, ownerId) {
-  //Можно лучше: В качестве параметров передавайте в шаблон карточки не переменные а объект
-  // если вы в ходе развития проекта захотите добавить переменных, то вам придётся менять код во многих местах _
   return new Card({
     name: name,
     link: link,
