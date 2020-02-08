@@ -1,3 +1,5 @@
+import "../images/close.svg";
+
 // Попап добавления карточек
 const popupAddCard = `<div class="popup__content">
   <img src="./images/close.svg" alt="" class="popup__close">

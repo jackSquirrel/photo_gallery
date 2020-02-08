@@ -10,7 +10,7 @@
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="<%=require('./images/logo.svg')%>" alt="mesto logo" class="logo">
+      <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -27,17 +27,8 @@
     </div>
 
     <div class="popup"></div>
-      
+
   </div>
-  <!--<script src = "js/Api.js"></script>
-  <script src = "js/popupContent.js"></script>
-  <script src = "js/Card.js"></script>
-  <script src = "js/CardList.js"></script>
-  <script src = "js/Validation.js"></script>
-  <script src = "js/Popup.js"></script>
-  <script src = "js/PopupNewCard.js"></script>
-  <script src = "js/PopupEditProfile.js"></script>
-  <script src = "js/RefreshAvatar.js"></script>-->
   <script type = "module" src = "<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>

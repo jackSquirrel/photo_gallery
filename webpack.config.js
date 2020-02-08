@@ -34,7 +34,13 @@ module.exports = {
             {
                 test: /\.(png|jpg|gif|ico|svg)$/,
                 use: [
-                    'file-loader',
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: './images/[name].[ext]',
+                            esModule: false
+                        }
+                    },
                     {
                         loader: 'image-webpack-loader',
                         options: {}
@@ -65,7 +71,7 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             inject: false, 
-            template: './src/index.html', // откуда брать образец для сравнения с текущим видом проекта
+            template: './src/index.html', 
             filename: 'index.html' 
         }),
         new WebpackMd5Hash()
