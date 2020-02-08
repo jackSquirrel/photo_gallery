@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jackSquirrel/photo_gallery.git"
+    "url": "git+https://github.com/jackSquirrel/photo_gallery"
   },
   "author": "Timur Ismagilov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jackSquirrel/photo_gallery/issues"
+    "url": "https://github.com/jackSquirrel/photo_gallery"
   },
-  "homepage": "https://github.com/jackSquirrel/photo_gallery",
+  "homepage": "https://github.com/jackSquirrel/photo_gallery/#README",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",

@@ -15,10 +15,12 @@ const editButton = document.querySelector('.edit__button');
 export const popup = document.querySelector('.popup');
 const avatar = document.querySelector('.user-info__photo');
 let userId = '';
+const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort6' : 'https://praktikum.tk/cohort6';
 
 // Взаимодействия с сервером
 const api = new Api({
-  link: "http://95.216.175.5/cohort6",
+  baseUrl: serverUrl,
+  //link: "http://95.216.175.5/cohort6",
   token: 'bcfb843c-3935-4485-8bf6-145f7aa5fc64'
 });
 
