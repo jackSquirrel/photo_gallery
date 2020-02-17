@@ -1,13 +1,26 @@
+import "./index.css";
+import Api from "./js/Api";
+import Card from "./js/Card";
+import CardList from "./js/CardList";
+import Popup from "./js/Popup";
+import {popupAddCard, popupEditProfile, popupOpenImage, changeAvatar} from "./js/popupContent";
+import PopupEditProfile from "./js/PopupEditProfile";
+import PopupNewCard from "./js/PopupNewCard";
+import RefreshAvatar from "./js/RefreshAvatar";
+import Validation from "./js/Validation";
+
 // ПЕРЕМЕННЫЕ 
 const formButton = document.querySelector('.user-info__button');
 const editButton = document.querySelector('.edit__button');
-const popup = document.querySelector('.popup');
+export const popup = document.querySelector('.popup');
 const avatar = document.querySelector('.user-info__photo');
 let userId = '';
+const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort6' : 'https://praktikum.tk/cohort6';
 
 // Взаимодействия с сервером
 const api = new Api({
-  link: "http://95.216.175.5/cohort6",
+  baseUrl: serverUrl,
+  //link: "http://95.216.175.5/cohort6",
   token: 'bcfb843c-3935-4485-8bf6-145f7aa5fc64'
 });
 
@@ -71,6 +84,7 @@ editPopup.render();
 // Попап для увеличенного изображения
 const imagePopup = new Popup({
   content: popupOpenImage,
+  popup: popup
 });
 imagePopup.render();
 
@@ -92,8 +106,6 @@ function renderInfo() {
 
 // Функция, возвращающая экземпляр класса Card
 function newCard(name, link, likes, cardId, ownerId) {
-  //Можно лучше: В качестве параметров передавайте в шаблон карточки не переменные а объект
-  // если вы в ходе развития проекта захотите добавить переменных, то вам придётся менять код во многих местах _
   return new Card({
     name: name,
     link: link,
@@ -132,7 +144,6 @@ cardsList.addDefaultCards();
 formButton.addEventListener('click', newCardPopup.open);
 editButton.addEventListener('click', editPopup.open);
 avatar.addEventListener('click', newAvatar.open);
-
 /**
  * Шикарная работа. Видно что вы потрудились основательно.
  *

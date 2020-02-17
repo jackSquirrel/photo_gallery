@@ -1,6 +1,6 @@
-class Api{
+export default class Api{
     constructor(props){
-        this._link = props.link;
+        this._link = props.baseUrl;
         this._token = props.token;
     }
 

@@ -1,4 +1,4 @@
-class CardList {
+export default class CardList {
   constructor(props) {
     this._container = props.container;
     this._initialCards = props.initialCards;
@@ -18,8 +18,6 @@ class CardList {
     this._initialCards()
       .then((res) => {
         res.forEach((card) => {
-          //Можно лучше: В качестве параметров передавайте в шаблон карточки не переменные а объект
-          // если вы в ходе развития проекта захотите добавить переменных, то вам придётся менять код во многих местах 
           this.addCard(this._createCard(card.name, card.link, card.likes, card._id, card.owner._id));
         });
       })

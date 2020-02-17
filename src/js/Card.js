@@ -1,4 +1,4 @@
-class Card {
+export default class Card {
     constructor(props){
       this._name = props.name;
       this._link = props.link;
