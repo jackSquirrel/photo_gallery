@@ -15,7 +15,7 @@ const editButton = document.querySelector('.edit__button');
 export const popup = document.querySelector('.popup');
 const avatar = document.querySelector('.user-info__photo');
 let userId = '';
-const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort6' : 'https://praktikum.tk/cohort6';
+const serverUrl = NODE_ENV === 'development' ? 'http://nomoreparties.co/cohort6' : 'https://nomoreparties.co/cohort6';
 
 // Взаимодействия с сервером
 const api = new Api({

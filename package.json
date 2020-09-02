@@ -6,7 +6,8 @@
   "scripts": {
     "build": "NODE_ENV=production rimraf dist && webpack --mode production",
     "dev": "NODE_ENV=development webpack-dev-server --mode development --open --watch",
-    "deploy": "NODE_ENV=production gh-pages -d dist"
+    "deploy": "NODE_ENV=production gh-pages -d dist",
+    "serdeploy": "npm run build && scp -r ./dist/* jack-squirrel@84.201.156.204:/home/jack-squirrel/mesto-frontend"
   },
   "repository": {
     "type": "git",
